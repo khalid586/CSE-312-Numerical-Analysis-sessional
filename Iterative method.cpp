@@ -1,24 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define rep(i,a,b) for(int i = a ; i < b ; i++)
-#define endl '\n'
-#define int long long 
+//#define int long long 
 
 
 double f(double x){
      double ans = 1/(sqrt(x+1)); // val of x  , x = 1 / sqrt(x + 1) . we got it after solving the eqn
      return ans;
 }
-int givenFunc(int x){
-     int ans = x*x*x + x*x -1; // given func
+double givenFunc(int x){
+     double ans = x*x*x + x*x -1; // given func
      return ans;
 }
 
 void solve(){
-     int st   , end  ;
+     double st   , end  ;
 
-     rep(i,-100,101){
+     for(int i = -100 ; i < 100 ; i++){
           if(givenFunc(i) * givenFunc(i+1) < 0){
                st = i ;
                end = i + 1;
@@ -27,7 +25,7 @@ void solve(){
      }
      for(double i = st + 0.1 ; i <= end ; i += 0.1){
           double ans = i;
-          rep(j , 1 , 101){
+          for(int i = 1 ; i < 100 ; i++){
                 ans = f(ans);
                 cout << ans << ' ';
           }
