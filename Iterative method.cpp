@@ -1,9 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//#define int long long 
-
-
 double f(double x){
      double ans = 1/(sqrt(x+1)); // val of x  , x = 1 / sqrt(x + 1) . we got it after solving the eqn
      return ans;
