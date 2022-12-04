@@ -1,13 +1,10 @@
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-using namespace __gnu_pbds;
 using namespace std;
 
 #define rep(i,a,b) for(int i = a ; i < b ; i++)
 #define endl '\n'
-
 #define int long long 
-#define all(x) x.begin(),x.end()
+
 
 double f(double x){
      double ans = 1/(sqrt(x+1)); // val of x  , x = 1 / sqrt(x + 1) . we got it after solving the eqn
@@ -17,7 +14,8 @@ int givenFunc(int x){
      int ans = x*x*x + x*x -1; // given func
      return ans;
 }
-void solve(int t){
+
+void solve(){
      int st   , end  ;
 
      rep(i,-100,101){
@@ -38,10 +36,7 @@ void solve(int t){
 }
 int32_t main()
 {
-   int t = 1; 
-   // cin >> t; 
-   rep(i,1,t+1) solve(i);
-   
-   return 0;
+     solve();
+     return 0;
 }
 
