@@ -8,7 +8,7 @@ double f(double x){
 
 int main()
 {
- 
+
     double negative , positive ;
     for(double i = -3 ; i < 3 ; i++){
 
@@ -31,10 +31,10 @@ int main()
          else              positive = result;
 
          if(results[results.size()-1] == results[results.size() - 2]) break;
-          
-    } 
 
-    cout << results[results.size() - 1] << '\n';
+    }
+
+    cout << "The answer is = " << results[results.size() - 1] << '\n';
     return 0;
 }
 

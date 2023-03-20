@@ -2,7 +2,7 @@
 using namespace std;
 
 double primeFunc(double x){ // Prime of given function which you have to get by differentiating the given function
-     double ans = 3 + sin(x); 
+     double ans = 3 + sin(x);
      return ans;
 }
 
@@ -19,14 +19,15 @@ void solve(){
           }
      }
 
-     double x = a; // we can assign b also (both will give you correct result . It might take a few more iterations to get the correct resutl. That's it .) 
+     double x = a; // we can assign b also (both will give you correct result . It might take a few more iterations to get the correct resutl. That's it .)
      cout << a << endl;
      for(int i = 1 ; i < 100 ; i++){
           double f_x = givenFunc(x) , f_prime_x = primeFunc(x); //It has been done in order to avoid malfunctioning
           x = x - (f_x/ f_prime_x);
           cout <<  x << '\n';
      }
-     
+
+     cout << "The answer is : " << x << "\n";
 }
 
 int32_t main()

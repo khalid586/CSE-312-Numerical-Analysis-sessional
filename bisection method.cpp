@@ -15,13 +15,13 @@ void solve(){
           }
      }
 
-     for(int i = 1; i < 100 ; i++){
+     for(int i = 1; i < 20 ; i++){
           double c = (a + b)/2;
           if(givenFunc(c) < 0)     a = c;
           else                     b = c;
-          cout <<  c << '\n';
+          cout <<  "C = " << c << '\n';
      }
-     
+
 }
 int32_t main()
 {

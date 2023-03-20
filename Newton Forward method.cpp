@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-  	int n,h; 
+  	int n,h;
 
  	cout << "Enter the number of inputs and value of h: ";
  	cin >> n >> h;
@@ -46,9 +46,9 @@ int main()
     n = (x[0] - x0) / h;
 
     double ans = y[0] + n*delY[0] + (n*(n-1))/2 * del2Y[0] + (n*(n-1)*(n-2))/6 * del3Y[0];
-    cout << ans << '\n';
+    cout << "The answer is = " << ans << '\n';
 
-    
+
     return 0;
 }
 
