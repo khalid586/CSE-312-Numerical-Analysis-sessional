@@ -6,12 +6,13 @@ double f(double x){
      return ans;
 }
 double givenFunc(int x){
-     double ans = x*x*x + x*x -1; // given func
+     double ans = x*x*x + x*x - 1; // given function
      return ans;
 }
 
 void solve(){
      double st   , end  ,result;
+     setprecision(3);
 
      for(int i = -100 ; i < 100 ; i++){
           if(givenFunc(i) * givenFunc(i+1) < 0){
@@ -20,15 +21,16 @@ void solve(){
                break;
           }
      }
+
      for(double i = st + 0.1 ; i <= end ; i += 0.1){
           double ans = i;
-          for(int i = 1 ; i < 100 ; i++){
+          for(int i = 1 ; i < 10 ; i++){
                 ans = f(ans);
                 result = ans;
+
           }
      }
-
-     cout << result << '\n';
+     cout << "The answer is : " << result << '\n';
 }
 int32_t main()
 {
