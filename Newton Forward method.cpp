@@ -3,8 +3,7 @@ using namespace std;
 
 int main()
 {
- 	freopen("in.txt","r", stdin);
- 	int n,h; 
+  	int n,h; 
 
  	cout << "Enter the number of inputs and value of h: ";
  	cin >> n >> h;
