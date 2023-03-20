@@ -3,6 +3,8 @@ using namespace std;
 
 int main()
 {
+              freopen( "in.txt" , "r" ,stdin);
+
     int n; 
     cin >> n;
 
@@ -26,14 +28,13 @@ int main()
         sum_of_x_sq += (x[i] * x[i]);
     }
 
-    double m = (n * sumOf_xy - sumX * sumY) / (n * sum_of_x_sq - sumX * sumX);
+    double a = (n * sumOf_xy - sumX * sumY) / (n * sum_of_x_sq - sumX * sumX);
 
-    double c = (sumY/n) - m *(sumX/n);
-    cout << c << '\n';
+    double b = (sumY/n) - a *(sumX/n);
+    cout << "Values are: a = " << a << ", b = " <<  b << '\n';
 
 
     return 0;
 }
-
 
 
