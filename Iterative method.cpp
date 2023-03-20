@@ -11,7 +11,7 @@ double givenFunc(int x){
 }
 
 void solve(){
-     double st   , end  ;
+     double st   , end  ,result;
 
      for(int i = -100 ; i < 100 ; i++){
           if(givenFunc(i) * givenFunc(i+1) < 0){
@@ -24,10 +24,11 @@ void solve(){
           double ans = i;
           for(int i = 1 ; i < 100 ; i++){
                 ans = f(ans);
-                cout << ans << ' ';
+                result = ans;
           }
-          cout << endl;
      }
+
+     cout << result << '\n';
 }
 int32_t main()
 {
